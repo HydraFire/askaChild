@@ -1,0 +1,19 @@
+{
+  "name": "askaChildrenNightmare",
+  "version": "1.0.0",
+  "description": "local scratch machine",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test.js"
+  },
+  "author": "Yaroslav Koval",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "express": "^4.16.2",
+    "nightmare": "^3.0.1",
+    "node-fetch": "^2.3.0"
+  }
+}

@@ -9,7 +9,7 @@ answer = 'test';
 function startRunCode(request, response) {
   busy = true;
   let func = new Function('nightmare', 'response', request.body.answer.code);
-  func(new Nightmare({ show: request.body.answer.devMode }), response);
+  func(new Nightmare({ show: (request.body.answer.devMode === 'true') }), response);
 }
 
 router.get('/checkOnline', function (req, res) {
